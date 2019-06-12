@@ -437,7 +437,7 @@ $('leg.html,bottomBody.html,chest.html').ready(function() {
              },
              contentType: 'application/json',
              dataType: 'json',
-             data: JSON.stringify({ "to": "eev79NgLKQo:APA91bEsTevu4_vY28Z6jDyupawrzUJ5MV8kdFvyWM5N_IvRTi4yfJK-_0qHogYrmz80kmRJJpnTw1J-VZ0MKv1mHQu1jlHtqeysqdYnWzUdtECf1HbztU8_brrNMQm91s2yoC2WL03k", "notification": { "title": "Test", "body": "Please end you training, time's up!!!", "icon": "firebase-logo.png" } }),
+             data: JSON.stringify({ "to": "eev79NgLKQo:APA91bEsTevu4_vY28Z6jDyupawrzUJ5MV8kdFvyWM5N_IvRTi4yfJK-_0qHogYrmz80kmRJJpnTw1J-VZ0MKv1mHQu1jlHtqeysqdYnWzUdtECf1HbztU8_brrNMQm91s2yoC2WL03k", "notification": { "title": "csie_big_jj", "body": "Please end you training, time's up!!!", "icon": "firebase-logo.png" } }),
              success: function(response) {
                  console.log(response);
              },
