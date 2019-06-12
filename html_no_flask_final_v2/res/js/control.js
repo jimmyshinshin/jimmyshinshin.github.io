@@ -437,7 +437,7 @@ $('leg.html,bottomBody.html,chest.html').ready(function() {
              },
              contentType: 'application/json',
              dataType: 'json',
-             data: JSON.stringify({ "to": "fLuEqMh7nxg:APA91bFoyB4e9Yzodaq76bnOBZUK2tcgiicKyJr1DcNUZOF3F9d9_LL1cWNS1iewjrTSa0tdNj6ed3PzgM9sE5vDtjfnNiSR5uEGMKkqbw-T5LSwN-TToTkxmNwy9sBzOd6S9C80Osir", "notification": { "title": "csie_big_jj", "body": "Please end you training, time's up!!!", "icon": "firebase-logo.png" } }),
+             data: JSON.stringify({ "to": "fLuEqMh7nxg:APA91bFoyB4e9Yzodaq76bnOBZUK2tcgiicKyJr1DcNUZOF3F9d9_LL1cWNS1iewjrTSa0tdNj6ed3PzgM9sE5vDtjfnNiSR5uEGMKkqbw-T5LSwN-TToTkxmNwy9sBzOd6S9C80Osir", "notification": { "title": "csie_big_jj", "body": "Please end you training, time is up!!!", "icon": "firebase-logo.png" } }),
              success: function(response) {
                  console.log(response);
              },
