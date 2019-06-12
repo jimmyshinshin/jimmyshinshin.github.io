@@ -429,22 +429,22 @@ $('leg.html,bottomBody.html,chest.html').ready(function() {
     $('.left_time').on('finish.countdown', function() {
         alert('時間到');
 
-        // $.ajax({
-        //     type: 'POST',
-        //     url: "https://fcm.googleapis.com/fcm/send",
-        //     headers: {
-        //         Authorization: 'key=' + 'AAAAEPLkz7k:APA91bE5yTF55iygNRapTTVDzm0mjOfFJOGQnspQm1sarhWOalJ2WWY21M2k_dV-lnrCeFtaZH8BBqWTseZLk2iiC-MevgPEws5FL0JcsedS3UKig-o9IlKkt6y1_OihNOWrXoWJwFi0'
-        //     },
-        //     contentType: 'application/json',
-        //     dataType: 'json',
-        //     data: JSON.stringify({ "to": "eOLehKXG9Ao:APA91bHJToli_46vXnNGYFdsncr0qva9H3mA6ZUk-EP7D9ElNvo8T8pFqLRk2oqSqDS4KffqyDnFCIitvakH-Lt6ptfk1iOsz4Hzsrgv3cGjDzqDsrfrZBI5g_BTk4VP1wqMAYNFT1v6", "notification": { "title": "Test", "body": "test123", "icon": "firebase-logo.png" } }),
-        //     success: function(response) {
-        //         console.log(response);
-        //     },
-        //     error: function(xhr, status, error) {
-        //         console.log(xhr.error);
-        //     }
-        // });
+         $.ajax({
+             type: 'POST',
+             url: "https://fcm.googleapis.com/fcm/send",
+             headers: {
+                 Authorization: 'key=' + 'AAAAEPLkz7k:APA91bE5yTF55iygNRapTTVDzm0mjOfFJOGQnspQm1sarhWOalJ2WWY21M2k_dV-lnrCeFtaZH8BBqWTseZLk2iiC-MevgPEws5FL0JcsedS3UKig-o9IlKkt6y1_OihNOWrXoWJwFi0'
+             },
+             contentType: 'application/json',
+             dataType: 'json',
+             data: JSON.stringify({ "to": "eev79NgLKQo:APA91bEsTevu4_vY28Z6jDyupawrzUJ5MV8kdFvyWM5N_IvRTi4yfJK-_0qHogYrmz80kmRJJpnTw1J-VZ0MKv1mHQu1jlHtqeysqdYnWzUdtECf1HbztU8_brrNMQm91s2yoC2WL03k", "notification": { "title": "Test", "body": "Please end you training, time's up!!!", "icon": "firebase-logo.png" } }),
+             success: function(response) {
+                 console.log(response);
+             },
+             error: function(xhr, status, error) {
+                 console.log(xhr.error);
+             }
+         });
         window.location.href = 'page1.html';
     });
 });
