@@ -420,7 +420,7 @@ $("#chest_key_check").on('click', function() {
 
 //倒數的地方 也是跳通知的地方  我先關掉 不然跟病毒一樣一直跳一直爽=.=
 $('leg.html,bottomBody.html,chest.html').ready(function() {
-    //window.open('https://test-72def.firebaseapp.com', '通知', config = 'height=100,width=100');
+    window.open(' https://test-72def.firebaseapp.com?userId=' + userID, '通知', config = 'height=100,width=100');
     val = 10 * 1000;
     selectedDate = new Date().valueOf() + val;
     $('.left_time').countdown(selectedDate, function(event) {
@@ -437,7 +437,7 @@ $('leg.html,bottomBody.html,chest.html').ready(function() {
              },
              contentType: 'application/json',
              dataType: 'json',
-             data: JSON.stringify({ "to": "fLuEqMh7nxg:APA91bFoyB4e9Yzodaq76bnOBZUK2tcgiicKyJr1DcNUZOF3F9d9_LL1cWNS1iewjrTSa0tdNj6ed3PzgM9sE5vDtjfnNiSR5uEGMKkqbw-T5LSwN-TToTkxmNwy9sBzOd6S9C80Osir", "notification": { "title": "csie_big_jj", "body": "Please end you training, time is up!!!", "icon": "firebase-logo.png" } }),
+             data: JSON.stringify({ "to": "eev79NgLKQo:APA91bEsTevu4_vY28Z6jDyupawrzUJ5MV8kdFvyWM5N_IvRTi4yfJK-_0qHogYrmz80kmRJJpnTw1J-VZ0MKv1mHQu1jlHtqeysqdYnWzUdtECf1HbztU8_brrNMQm91s2yoC2WL03k", "notification": { "title": "Test", "body": "Please end you training, time's up!!!", "icon": "firebase-logo.png" } }),
              success: function(response) {
                  console.log(response);
              },
