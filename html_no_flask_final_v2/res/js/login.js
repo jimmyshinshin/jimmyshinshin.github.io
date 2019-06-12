@@ -19,8 +19,18 @@ $("input[type='submit']").on('click', function(e) {
 
     firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
         // Handle Errors here.
-        alert("Wrong password!!!!")
-            // ...
+        var errorCode = error.code
+        var errorMessage = error.message
+        if (errorCode == 'auth/user-not-found') {
+            alert("Did you logged in first? There is no your account information.")
+        } else if (errorCode == 'auth/invalid-email') {
+            alert("The email you typed in is invalid!")
+        } else if (errorCode == 'auth/wrong-password') {
+            alert('Wrong password!!!!')
+        } else {
+            alert(errorMessage)
+        }
+        // ...
     });
     // firebase.auth().createUserWithEmailAndPassword($("input[name='email']").val(),
     //     $("input[name='password']").val()).then(function(firebaseUser) {
